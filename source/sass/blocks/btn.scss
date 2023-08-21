@@ -1,17 +1,34 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
-
-  color: $color-default-white;
-
-  //background-color: $color-neon-blue;
+  padding: 12px 24px;
+  border-radius: 12px;
   border: none;
+
   cursor: pointer;
+
+  font-family: $ff-manrope;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  color: rgba(0, 0, 0, 0.8);
+
+  background-color: $color-default-white;
 
   transition: opacity $trans-default;
 
-  &--red {
-    //background-color: $color-torch-red;
+  &--green {
+    color: $color-default-white;
+    background: $apple-to-cyan;
+    box-shadow: $bs-green-1, $bs-green-2, $bs-green-3, $bs-green-4;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--icon {
+    padding: 12px;
   }
 
   &:disabled {

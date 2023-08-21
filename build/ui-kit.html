@@ -233,12 +233,14 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
               <h2>Модальные окна</h2>
               <div class="uikit__component">
                 <p class="uikit__text uikit__text--class">.modal \ .modal--feedback</p>
-                <button class="btn" type="button" data-open-modal="feedback">modal-feedback</button>
+                <button class="btn" type="button" data-open-modal="feedback"><span>modal-feedback</span>
+                </button>
                 <pre><code class="language-pug">+btn({text: "modal-feedback"})(data-open-modal="feedback")</code></pre>
               </div>
               <div class="uikit__component">
                 <p class="uikit__text uikit__text--class">.modal \ .modal--success</p>
-                <button class="btn" type="button" data-open-modal="success">modal-success</button>
+                <button class="btn" type="button" data-open-modal="success"><span>modal-success</span>
+                </button>
                 <pre><code class="language-pug">+btn({text: "modal-success"})(data-open-modal="success")
 </code></pre>
               </div>
@@ -247,17 +249,29 @@ code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shad
               <h2>Кнопки</h2>
               <div class="uikit__component">
                 <p class="uikit__text uikit__text--class">.btn \ default \ button</p>
-                <button class="btn" type="button">Кнопка</button>
+                <button class="btn" type="button"><span>Кнопка</span>
+                </button>
                 <pre><code class="language-pug">+btn({text: "Текст", href: "#"})</code></pre>
               </div>
               <div class="uikit__component">
-                <p class="uikit__text uikit__text--class">.btn \ .btn--red \ link</p>
-                <a class="btn btn--red" href="#" target="_blank" rel="nofollow noopener noreferrer" aria-label="Просто ссылка">Текст</a>
-                <pre><code class="language-pug">+btn({text: "Текст", href: "#", isExternal: true})(aria-label="Просто ссылка").btn--red</code></pre>
+                <p class="uikit__text uikit__text--class">.btn \ .btn--green \ link</p>
+                <a class="btn btn--green" href="#" target="_blank" rel="nofollow noopener noreferrer" aria-label="Просто ссылка"><span>Текст</span>
+                </a>
+                <pre><code class="language-pug">+btn({text: "Текст", href: "#", isExternal: true})(aria-label="Просто ссылка").btn--green</code></pre>
+              </div>
+              <div class="uikit__component">
+                <p class="uikit__text uikit__text--class">.btn \ .btn--green .btn--icon \ link</p>
+                <a class="btn btn--green btn--icon" href="#" target="_blank" rel="nofollow noopener noreferrer" aria-label="Просто ссылка">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                  </svg>
+                </a>
+                <pre><code class="language-pug">+btn({href: "#", icon: ["icon-close", 24, 24], isExternal: true})(aria-label="Просто ссылка").btn--green.btn--icon</code></pre>
               </div>
               <div class="uikit__component">
                 <p class="uikit__text uikit__text--class">.btn \ disabled \ button</p>
-                <button class="btn" type="button" disabled>Текст</button>
+                <button class="btn" type="button" disabled><span>Текст</span>
+                </button>
                 <pre><code class="language-pug">+btn({text: "Текст"})(disabled)
 </code></pre>
               </div>

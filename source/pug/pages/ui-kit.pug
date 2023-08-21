@@ -69,12 +69,19 @@ block main
               code(class="language-pug").
                 +btn({text: "Текст", href: "#"})
           .uikit__component
-            p.uikit__text.uikit__text--class .btn \ .btn--red \ link
-            +btn({text: "Текст", href: "#", isExternal: true}).btn--red(aria-label="Просто ссылка")
+            p.uikit__text.uikit__text--class .btn \ .btn--green \ link
+            +btn({text: "Текст", href: "#", isExternal: true}).btn--green(aria-label="Просто ссылка")
             pre
               |
               code(class="language-pug").
-                +btn({text: "Текст", href: "#", isExternal: true})(aria-label="Просто ссылка").btn--red
+                +btn({text: "Текст", href: "#", isExternal: true})(aria-label="Просто ссылка").btn--green
+          .uikit__component
+            p.uikit__text.uikit__text--class .btn \ .btn--green .btn--icon \ link
+            +btn({href: "#", icon: ["icon-close", 24, 24], isExternal: true}).btn--green.btn--icon(aria-label="Просто ссылка")
+            pre
+              |
+              code(class="language-pug").
+                +btn({href: "#", icon: ["icon-close", 24, 24], isExternal: true})(aria-label="Просто ссылка").btn--green.btn--icon
           .uikit__component
             p.uikit__text.uikit__text--class .btn \ disabled \ button
             +btn({text: "Текст"})(disabled)
