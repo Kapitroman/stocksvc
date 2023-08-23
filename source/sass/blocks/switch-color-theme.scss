@@ -1,9 +1,17 @@
 .switch-color-theme {
   label {
+    display: flex;
+    align-items: center;
+
     cursor: pointer;
 
     @include hover-focus {
       opacity: 0.6;
     }
+  }
+
+  svg {
+    width: size(24px);
+    height: size(24px);
   }
 }

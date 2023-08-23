@@ -369,13 +369,18 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.9523809524vw;
+  line-height: 1.5rem;
   font-family: "Placeholder", "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -552,19 +557,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1680px;
+  max-width: 105rem;
   margin: 0 auto;
-  padding: 0 180px;
-}
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 100px;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 40px;
-  }
+  padding: 0 11.25rem;
 }
 @media (max-width: 767px) {
   .container {
@@ -573,8 +568,22 @@ button,
 }
 
 .header {
-  padding: 24px 0;
+  padding: 1.5rem 0;
   background-color: #17181A;
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 22px 0;
+  }
+  .header .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .header .btn--green {
+    display: none;
+  }
 }
 .header .container {
   display: -webkit-box;
@@ -587,33 +596,24 @@ button,
 .header .logo {
   margin-right: auto;
 }
-.header__bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: 24px;
-}
-.header__bar * {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.header .switch-color-theme {
+  margin-left: 1.5rem;
 }
 @media (max-width: 767px) {
-  .header__bar {
+  .header .switch-color-theme {
+    display: none;
+  }
+}
+.header .socials {
+  margin-left: 1.5rem;
+}
+@media (max-width: 767px) {
+  .header .socials {
     display: none;
   }
 }
 .header .btn {
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .footer {
@@ -747,15 +747,15 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 12px 24px;
-  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
   border: none;
   cursor: pointer;
   font-family: "Manrope", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.4px;
+  line-height: 1.5rem;
+  letter-spacing: -0.025rem;
   color: rgba(0, 0, 0, 0.8);
   background-color: #ffffff;
   -webkit-transition: opacity 0.3s ease;
@@ -771,7 +771,7 @@ button,
   width: 100%;
 }
 .btn--icon {
-  padding: 12px;
+  padding: 0.75rem;
 }
 .btn:disabled {
   opacity: 0.5;
@@ -789,18 +789,6 @@ button,
   opacity: 0.8;
 }
 
-@media (max-width: 767px) {
-  .header .btn {
-    padding: 8px 16px;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0px;
-  }
-  .header .btn--green {
-    display: none;
-  }
-}
-
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -808,7 +796,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   width: 530px;
-  padding: size(14px) 0 28px 0;
+  padding: 0.875rem 0 28px 0;
 }
 @media screen and (max-width: 767px) {
   .custom-input,
@@ -1618,12 +1606,23 @@ button,
 }
 
 .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 .socials__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (hover: hover) {
   .socials__link:hover:not(.focus-visible) {
@@ -1633,12 +1632,24 @@ button,
 .socials__link.focus-visible:focus {
   opacity: 0.6;
 }
-
-.header .socials {
-  display: contents;
+.socials svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+@media (max-width: 767px) {
+  .socials svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .switch-color-theme label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 @media (hover: hover) {
@@ -1649,10 +1660,15 @@ button,
 .switch-color-theme label.focus-visible:focus {
   opacity: 0.6;
 }
+.switch-color-theme svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
 .logo {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  width: 14.125rem;
 }
 @media (max-width: 767px) {
   .logo {

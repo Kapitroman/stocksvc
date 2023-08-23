@@ -1,6 +1,8 @@
 .logo {
   flex-shrink: 0;
 
+  width: size(226px);
+
   @include vp-767 {
     width: 151px;
   }

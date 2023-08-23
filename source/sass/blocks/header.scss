@@ -1,30 +1,43 @@
 .header {
-  padding: 24px 0;
+  padding: size(24px) 0;
 
   background-color: $color-black-russian;
+
+  @include vp-767 {
+    padding: 22px 0;
+
+    .btn {
+      padding: 8px 16px;
+
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0px;
+    }
+
+    .btn--green {
+      display: none;
+    }
+  }
 
   .container {
     display: flex;
     align-items: center;
-    //flex-wrap: wrap;
   }
 
   .logo {
     margin-right: auto;
   }
 
-  &__bar {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    flex-wrap: wrap;
+  .switch-color-theme {
+    margin-left: size(24px);
 
-    margin-left: 24px;
-
-    * { ///////// перенести в social ???
-      display: flex;
-      align-items: center;
+    @include vp-767 {
+      display: none;
     }
+  }
+
+  .socials {
+    margin-left: size(24px);
 
     @include vp-767 {
       display: none;
@@ -32,6 +45,6 @@
   }
 
   .btn {
-    margin-left: 24px;
+    margin-left: size(24px);
   }
 }

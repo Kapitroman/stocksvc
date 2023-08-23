@@ -1,18 +1,29 @@
 .socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: size(24px);
+
   list-style: none;
 
   margin: 0;
   padding-left: 0;
 
   &__link {
-    display: block;
+    display: flex;
 
     @include hover-focus {
       opacity: 0.6;
     }
   }
-}
 
-.header .socials {
-  display: contents;
+  svg {
+    width: size(24px);
+    height: size(24px);
+
+    @include vp-767 {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
