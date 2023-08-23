@@ -1,13 +1,37 @@
 .header {
-  padding: 28px 0;
+  padding: 24px 0;
 
-  //background-color: $color-neon-blue;
+  background-color: $color-black-russian;
 
   .container {
     display: flex;
+    align-items: center;
+    //flex-wrap: wrap;
   }
 
-  &__logo {
-    color: $color-default-white;
+  .logo {
+    margin-right: auto;
+  }
+
+  &__bar {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-left: 24px;
+
+    * { ///////// перенести в social ???
+      display: flex;
+      align-items: center;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  .btn {
+    margin-left: 24px;
   }
 }

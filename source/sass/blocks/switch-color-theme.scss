@@ -1,0 +1,9 @@
+.switch-color-theme {
+  label {
+    cursor: pointer;
+
+    @include hover-focus {
+      opacity: 0.6;
+    }
+  }
+}

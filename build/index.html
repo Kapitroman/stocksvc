@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>ProjectName</title>
+    <title>StockSVC</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,28 +10,52 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container"><span class="header__logo">Логотип</span>
-          <nav class="main-nav">
-            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-              <svg width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
-              </svg>
-            </button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><span class="main-nav__link is-active">Главная</span>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 2</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 3</a>
-                </li>
-              </ul>
+      <div class="intro-wrapper">
+        <header class="header">
+          <div class="container">
+            <div class="logo">
+              <picture>
+                <source type="image/webp" srcset="img/content/stocks-logo.webp, img/content/stocks-logo@2x.webp 2x"><img src="img/content/stocks-logo.png" srcset="img/content/stocks-logo@2x.png 2x" width="226" height="36" alt="logo-stock-sfc">
+              </picture>
             </div>
-          </nav>
-        </div>
-      </header>
-      <main>
+            <div class="header__bar">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link" href=""><span class="visually-hidden">twitter</span>
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#twitter"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href=""><span class="visually-hidden">discord</span>
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#discord"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href=""><span class="visually-hidden">facebook</span>
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href=""><span class="visually-hidden">instagram</span>
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href=""><span class="visually-hidden">telegram</span>
+                    <svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#telegram"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="switch-color-theme">
+                <label aria-label="dark theme" tabindex="0">
+                  <svg width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#dark-mode"></use>
+                  </svg>
+                  <input class="visually-hidden" type="checkbox" name="toggle-color-theme" value="dark" tabindex="-1" checked>
+                </label>
+              </div>
+            </div>
+            <a class="btn btn--green" href="#"><span>Sign Up</span>
+            </a>
+            <a class="btn" href="#"><span>Login</span>
+            </a>
+          </div>
+        </header>
         <div class="intro">
           <div class="container">
             <p style="margin-top: 40px;">Текст&nbsp;с&nbsp;мнемониками</p>
@@ -40,7 +64,8 @@
             </p>
           </div>
         </div>
-      </main>
+      </div>
+      <main></main>
       <footer class="footer">
         <div class="container"></div>
       </footer>

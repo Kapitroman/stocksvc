@@ -1,4 +1,4 @@
-mixin header(headerMods, currentUrl)
+//-mixin header(headerMods, currentUrl)
   -
     const headerLinks = [
       {
@@ -34,3 +34,65 @@ mixin header(headerMods, currentUrl)
                   span.main-nav__link.is-active= link.text
                 else
                   a.main-nav__link(href=link.href)= link.text
+
+mixin header(headerMods, currentUrl)
+  header.header(class=headerMods)
+    .container
+      .logo
+        +picture("content", "stocks-logo", "png", "226", "36", "logo-stock-sfc")
+      .header__bar
+        ul.socials
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden twitter
+              +icon("twitter", 24, 24)
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden discord
+              +icon("discord", 24, 24)
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden facebook
+              +icon("facebook", 24, 24)
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden instagram
+              +icon("instagram", 24, 24)
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden telegram
+              +icon("telegram", 24, 24)
+        .switch-color-theme
+          label(aria-label="dark theme" tabindex="0")
+            +icon("dark-mode", 24, 24)
+            input.visually-hidden(type="checkbox" name="toggle-color-theme" value="dark" tabindex="-1" checked)
+
+
+        //-.switch-color-theme
+          label(aria-label="dark theme")
+          label(aria-label="light theme")
+          input(id="toggle-color-theme")
+
+        //-fieldset.toggle(data-toggle-color-theme)
+            legend.visually-hidden Переключатель цветовой схемы
+            label
+              input.visually-hidden(type="radio" name="toggle-color-theme" value="light" aria-label="светлая")
+              span
+                +icon("icon-sun", 16, 16)
+            label
+              input.visually-hidden(type="radio" name="toggle-color-theme" value="dark" aria-label="темная")
+              span
+                +icon("icon-dark", 16, 16)
+        //-+custom-toggle({
+          inputLabel: "Чекбокс",
+          inputName: "user-agreement",
+          inputValue: "user-agreement-1",
+          inputChecked: false
+          }).custom-toggle--checkbox
+      +btn({
+        text: "Sign Up", href: "#",
+      }).btn--green
+      +btn({
+        text: "Login", href: "#",
+      })
+

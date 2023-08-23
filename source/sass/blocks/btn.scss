@@ -37,7 +37,27 @@
     pointer-events: none;
   }
 
+  span {
+    white-space: nowrap;
+  }
+
   @include hover-focus {
     opacity: 0.8;
+  }
+}
+
+.header {
+  @include vp-767 {
+    .btn {
+      padding: 8px 16px;
+
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0px;
+    }
+
+    .btn--green {
+      display: none;
+    }
   }
 }

@@ -33,8 +33,10 @@ html(lang="ru")
 
   body
     .wrapper(class=wrapperMods)
-      if (hasHeader)
-        +header(headerMods, currentUrl)
+      .intro-wrapper
+        if (hasHeader)
+          +header(headerMods, currentUrl)
+        +intro()
 
       block main
 

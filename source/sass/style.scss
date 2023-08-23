@@ -20,7 +20,7 @@
 // ---------------------------------
 
 @import "blocks/header";
-@import "blocks/main-nav";
+//@import "blocks/main-nav";
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/btn";
@@ -28,6 +28,10 @@
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 @import "blocks/input-upload";
+
+@import "blocks/socials";
+@import "blocks/switch-color-theme";
+@import "blocks/logo";
 
 // ---------------------------------
 
