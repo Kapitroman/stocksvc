@@ -890,8 +890,8 @@ button,
 .btn--green {
   color: #ffffff;
   background: linear-gradient(135deg, #76BB39 0%, #16B862 51.88%, #00858F 100%);
-  -webkit-box-shadow: 0px 0.5rem 0.5rem -0.25rem rgba(22, 184, 98, 0.12), 0px 1rem 1.5rem 0px rgba(22, 184, 98, 0.24), 0px 0.125rem 0.25rem -1px rgba(10, 70, 82, 0.12), 0px 0px 1px 0px rgba(22, 184, 98, 0.24);
-          box-shadow: 0px 0.5rem 0.5rem -0.25rem rgba(22, 184, 98, 0.12), 0px 1rem 1.5rem 0px rgba(22, 184, 98, 0.24), 0px 0.125rem 0.25rem -1px rgba(10, 70, 82, 0.12), 0px 0px 1px 0px rgba(22, 184, 98, 0.24);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(22, 184, 98, 0.24), 0px 0.125rem 0.25rem -1px rgba(10, 70, 82, 0.12), 0px 1rem 1.5rem 0px rgba(22, 184, 98, 0.24), 0px 0.5rem 0.5rem -0.25rem rgba(22, 184, 98, 0.12);
+          box-shadow: 0px 0px 1px 0px rgba(22, 184, 98, 0.24), 0px 0.125rem 0.25rem -1px rgba(10, 70, 82, 0.12), 0px 1rem 1.5rem 0px rgba(22, 184, 98, 0.24), 0px 0.5rem 0.5rem -0.25rem rgba(22, 184, 98, 0.12);
 }
 .btn--full-width {
   width: 100%;
@@ -1910,13 +1910,13 @@ h3.title {
     margin-right: 0;
   }
 }
-.intro__title {
+.intro h1.title {
   width: 40.375rem;
   margin: 0;
   margin-bottom: 3rem;
 }
 @media (max-width: 767px) {
-  .intro__title {
+  .intro h1.title {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -2362,6 +2362,72 @@ h3.title {
     bottom: 88px;
     right: -38px;
   }
+}
+
+.platform {
+  position: relative;
+  padding: 6rem 0;
+  background-color: #17181A;
+}
+@media (max-width: 767px) {
+  .platform {
+    display: none;
+  }
+}
+.platform .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.platform__container-image {
+  width: 35.375rem;
+  aspect-ratio: 566/419;
+  height: auto;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(245, 247, 250, 0.12);
+  margin-right: 7.1875rem;
+}
+.platform__container-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.platform__container-text {
+  width: 25.9375rem;
+}
+.platform h2.title {
+  margin: 0;
+  margin-bottom: 3rem;
+}
+.platform__text {
+  margin: 0;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+.platform .platrorm__circle {
+  position: absolute;
+  left: 5.3125rem;
+  top: -2.75rem;
+  width: 18.125rem;
+  height: 18.125rem;
+  border-radius: 100%;
+  background-image: linear-gradient(135deg, #76BB39 0%, #16B862 51.88%, #00858F 100%);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(22, 184, 98, 0.24), 0px 0.125rem 0.25rem -1px rgba(10, 70, 82, 0.12), 0px 1rem 1.5rem 0px rgba(22, 184, 98, 0.24), 0px 0.5rem 0.5rem -0.25rem rgba(22, 184, 98, 0.12);
+          box-shadow: 0px 0px 1px 0px rgba(22, 184, 98, 0.24), 0px 0.125rem 0.25rem -1px rgba(10, 70, 82, 0.12), 0px 1rem 1.5rem 0px rgba(22, 184, 98, 0.24), 0px 0.5rem 0.5rem -0.25rem rgba(22, 184, 98, 0.12);
+}
+.platform .platrorm__circle--small {
+  left: -6.25rem;
+  top: 20.25rem;
+  width: 12.5rem;
+  height: 12.5rem;
 }
 
 /* @mixin hover-focus {

@@ -1,0 +1,74 @@
+.platform {
+  position: relative;
+
+  padding: size(96px) 0;
+
+  background-color: $color-black-russian;
+
+  @include vp-767 {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  &__container-image {
+    width: size(566px);
+    aspect-ratio: 566 / 419;
+    height: auto;
+    border-radius: size(24px);
+    border: 1px solid rgba($color-alice-blue, 0.12);
+    margin-right: size(115px);
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__container-text {
+    width: size(415px);
+  }
+
+  h2.title {
+    margin: 0;
+    margin-bottom: size(48px);
+  }
+
+  &__text {
+    margin: 0;
+
+    font-family: $ff-manrope;
+    font-size: size(18px);
+    font-weight: 500;
+    line-height: size(36px);
+  }
+
+  .platrorm__circle {
+    position: absolute;
+    left: size(85px);
+    top: size(-44px);
+
+    width: size(290px);
+    height: size(290px);
+    border-radius: 100%;
+
+    background-image: $apple-to-cyan;
+    box-shadow: $bs-green-4, $bs-green-3, $bs-green-2, $bs-green-1;
+  }
+
+  .platrorm__circle--small {
+    left: size(-100px);
+    top: size(324px);
+
+    width: size(200px);
+    height: size(200px);
+  }
+}
