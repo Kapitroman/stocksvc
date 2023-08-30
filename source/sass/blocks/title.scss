@@ -1,0 +1,43 @@
+.title {
+  font-family: $ff-druk;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h1.title {
+  font-size: size(64px);
+  line-height: size(64px);
+  letter-spacing: size(-2px);
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+}
+
+h2.title {
+  font-size: size(36px);
+  line-height: size(48px);
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -1px;
+  }
+}
+
+h2.title--center {
+  text-align: center;
+}
+
+h3.title {
+  font-size: size(24px);
+  line-height: size(28px);
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

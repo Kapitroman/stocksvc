@@ -703,6 +703,14 @@ button,
 .footer__menu-link {
   display: block;
 }
+@media (hover: hover) {
+  .footer__menu-link:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+}
+.footer__menu-link.focus-visible:focus {
+  opacity: 0.6;
+}
 @media (max-width: 767px) {
   .footer .socials {
     -webkit-box-ordinal-group: 0;
@@ -1819,6 +1827,53 @@ button,
   }
 }
 
+.title {
+  font-family: "Druk Cyr", "Arial", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h1.title {
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: -0.125rem;
+}
+@media (max-width: 767px) {
+  h1.title {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+}
+
+h2.title {
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+@media (max-width: 767px) {
+  h2.title {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -1px;
+  }
+}
+
+h2.title--center {
+  text-align: center;
+}
+
+h3.title {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+@media (max-width: 767px) {
+  h3.title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 .intro .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1859,12 +1914,6 @@ button,
   width: 40.375rem;
   margin: 0;
   margin-bottom: 3rem;
-  font-family: "Druk Cyr", "Arial", sans-serif;
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 4rem;
-  letter-spacing: -0.125rem;
-  text-transform: uppercase;
 }
 @media (max-width: 767px) {
   .intro__title {
@@ -1873,10 +1922,6 @@ button,
             order: -1;
     width: 296px;
     margin-bottom: 24px;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: -1px;
-    text-align: center;
   }
 }
 .intro__slogan {

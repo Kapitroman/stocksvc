@@ -33,23 +33,11 @@
     margin: 0;
     margin-bottom: size(48px);
 
-    font-family: $ff-druk;
-    font-size: size(64px);
-    font-weight: 900;
-    line-height: size(64px);
-    letter-spacing: size(-2px);
-    text-transform: uppercase;
-
     @include vp-767 {
       order: -1;
 
       width: 296px;
       margin-bottom: 24px;
-
-      font-size: 32px;
-      line-height: 32px;
-      letter-spacing: -1px;
-      text-align: center;
     }
   }
 

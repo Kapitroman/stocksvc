@@ -65,6 +65,10 @@
 
   &__menu-link {
     display: block;
+
+    @include hover-focus {
+      opacity: 0.6;
+    }
   }
 
   .socials {
