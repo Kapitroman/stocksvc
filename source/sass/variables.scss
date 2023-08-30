@@ -18,25 +18,24 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 //black
 $color-black-russian:               #17181A;
 $color-black-russian-2:             #212224;
+$color-black-russian-3:             #383A3D;
 
 //green
 $color-apple:                       #76BB39;
 $color-jade:                        #16B862;
 $color-dark-cyan :                  #00858F;
 
-
+//light
+$color-alice-blue:                  #F5F7FA;
+$color-lavender:                    #E0E0FF;
 
 // Gradient
 
 //$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $apple-to-cyan:                     linear-gradient(135deg, #76BB39 0%, #16B862 51.88%, #00858F 100%);
+$black-to-transparent:              radial-gradient(107.98% 54.22% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);
+$black-to-light:                    linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0.0001) 100%);
 
-//Shadow
-
-$bs-green-1:                        0px 8px 8px -4px rgba(22, 184, 98, 0.12);
-$bs-green-2:                        0px 16px 24px 0px rgba(22, 184, 98, 0.24);
-$bs-green-3:                        0px 2px 4px -1px rgba(10, 70, 82, 0.12);
-$bs-green-4:                        0px 0px 1px 0px rgba(22, 184, 98, 0.24);
 // Typography
 // ---------------------------------
 

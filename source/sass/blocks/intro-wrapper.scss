@@ -1,0 +1,13 @@
+.intro-wrapper {
+  background-image: url("../img/content/video.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/content/video@2x.png");
+  }
+
+  @include vp-767 {
+    background-position: 50% 0;
+  }
+}

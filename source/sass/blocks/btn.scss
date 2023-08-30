@@ -29,6 +29,11 @@
 
   &--icon {
     padding: size(12px);
+
+    svg {
+      width: size(24px);
+      height: size(24px);
+    }
   }
 
   &:disabled {

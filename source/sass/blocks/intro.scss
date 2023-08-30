@@ -1,0 +1,380 @@
+.intro {
+
+  .container {
+    display: flex;
+
+    min-height: size(876px);
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: center;
+
+      min-height: 745px;
+      padding: 32px 0 72px 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto 0;
+    margin-right: size(118px);
+
+    @include vp-767 {
+      display: contents;
+
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    width: size(646px);
+    margin: 0;
+    margin-bottom: size(48px);
+
+    font-family: $ff-druk;
+    font-size: size(64px);
+    font-weight: 900;
+    line-height: size(64px);
+    letter-spacing: size(-2px);
+    text-transform: uppercase;
+
+    @include vp-767 {
+      order: -1;
+
+      width: 296px;
+      margin-bottom: 24px;
+
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1px;
+      text-align: center;
+    }
+  }
+
+  &__slogan {
+    margin: 0;
+    margin-bottom: size(48px);
+
+    font-family: $ff-manrope;
+    font-size: size(24px);
+    font-weight: 500;
+    line-height: size(28px);
+
+    @include vp-767 {
+      margin-bottom: 24px;
+
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    .btn + .btn {
+      margin-left: size(24px);
+    }
+  }
+
+  &__hero-image {
+    position: relative;
+
+    display: grid;
+
+    margin-top: size(38px);
+    margin-bottom: size(120px);
+
+    @include vp-767 {
+      order: -1;
+
+      margin-top: 0;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__image-iphone {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    z-index: 2;
+
+    img {
+      width: size(354.55px);
+      height: auto;
+      aspect-ratio: 35555 / 71889;
+
+      @include vp-767 {
+        width: 180px;
+      }
+    }
+  }
+
+  &__image-content {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    z-index: 3;
+
+    display: grid;
+
+    padding: size(17px) size(19px);
+
+    @include vp-767 {
+      padding: 9px 10px;
+    }
+
+    svg {
+      grid-row: 1 / -1;
+      grid-column: 1 / -1;
+
+      width: size(315.52px);
+      height: auto;
+      aspect-ratio: 31552 / 68301;
+
+      @include vp-767 {
+        width: 160px;
+      }
+    }
+  }
+
+  &__image-card {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: size(267px);
+    margin: size(83px) auto auto auto;
+
+    @include vp-767 {
+      width: 138px;
+      margin-top: 42px;
+    }
+  }
+
+  &__image-card-info {
+    display: flex;
+    flex-direction: column;
+
+    font-family: $ff-manrope;
+    font-size: size(16px);
+    font-weight: 500;
+    line-height: size(24px);
+    color: $color-default-white;
+
+    @include vp-767 {
+     font-size: 6px;
+     line-height: 10px;
+    }
+  }
+
+  &__image-card-title {
+    margin-bottom: size(3px);
+  }
+
+  &__image-card-price {
+    margin-bottom: size(8px);
+
+    font-family: $ff-space;
+    font-size: size(30px);
+    font-weight: 700;
+    line-height: size(30px);
+    letter-spacing: size(-2px);
+
+    @include vp-767 {
+      margin-bottom: 4px;
+
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+
+  &__image-card-price-rise {
+    font-family: $ff-manrope;
+    font-size: size(13px);
+    font-weight: 500;
+    line-height: size(16px);
+    color: $color-jade;
+
+    @include vp-767 {
+      font-size: 7px;
+      line-height: 11px;
+    }
+  }
+
+  &__image-card-face {
+    width: size(84px);
+    height: size(84px);
+
+    @include vp-767 {
+      width: 43px;
+      height: 43px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__image-button {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+
+    width: size(286px);
+    margin: auto;
+    margin-bottom: size(18px);
+
+    justify-content: center;
+
+    @include vp-767 {
+      width: 145px;
+      margin-bottom: 9px;
+      padding: 6px 10px 6px 10px;
+      border-radius: 5px;
+
+      font-size: 8px;
+      line-height: 12px;
+    }
+  }
+
+  &__image-tabs {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+
+    width: size(286px);
+    min-height: size(36px);
+    margin: auto;
+    margin-bottom: size(84px);
+    padding-left: 0;
+    border-radius: size(8px);
+    border: size(2px) solid $color-black-russian-2;
+
+    list-style: none;
+
+    background-color: $color-black-russian-2;
+
+    font-family: $ff-manrope;
+    font-size: size(14px);
+    font-weight: 500;
+    line-height: size(23px);
+    color: $color-default-white;
+
+    @include vp-767 {
+      width: 145px;
+      min-height: 18px;
+      margin-bottom: 43px;
+      border-radius: 4px;
+      border-width: 1px;
+
+      font-size: 5px;
+      line-height: 7px;
+    }
+  }
+
+  &__image-tabs-item {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    width: calc(100% - size(286px) / 5);
+    padding: size(5px) size(4px) size(4px) size(4px);
+    border-radius: size(2px);
+
+    @include vp-767 {
+      padding: 5px 4px 4px 4px;
+    }
+  }
+
+  &__image-tabs-item--active {
+    background-color: $color-black-russian-3;
+  }
+
+  .intro__image-tabs-item:not(.intro__image-tabs-item--active) + .intro__image-tabs-item:not(.intro__image-tabs-item--active) {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: size(8px);
+      left: size(-1px);
+
+      width: size(2px);
+      height: size(16px);
+
+      background-color: rgba($color-lavender, 0.12);
+
+      @include vp-767 {
+        top: 4px;
+        left: 1px;
+
+        width: 1px;
+        height: 8px;
+      }
+    }
+  }
+
+  &__shadow-small {
+    position: absolute;
+    right: size(-135px);
+    bottom: size(50px);
+
+    width: size(354px);
+    height: size(66px);
+
+    opacity: 0.5;
+    filter: blur(43px);
+    transform: rotate(-52.87deg);
+
+    background-image: $black-to-transparent;
+
+    @include vp-767 {
+      right: -70px;
+      bottom: 30px;
+
+      width: 180px;
+      height: 33px;
+
+      filter: blur(12px);
+    }
+  }
+
+  &__shadow-big {
+    position: absolute;
+    top: size(170px);
+    left: size(135px);
+
+    width: size(308px);
+    height: size(685px);
+
+    transform: rotate(37deg);
+    filter: blur(size(32px));
+    opacity: 0.5;
+
+    background-image: $black-to-transparent;
+
+    @include vp-767 {
+      top: 85px;
+      left: 70px;
+
+      width: 156px;
+      height: 347px;
+
+      filter: blur(12px);
+    }
+  }
+
+  &__container-cards {
+    position: relative;
+
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+  }
+}

@@ -4,7 +4,7 @@ include ../components
 
 block variables
 
-html(lang="ru")
+html(lang="en")
   head
     title= title
     meta(charset="utf-8")
@@ -36,7 +36,8 @@ html(lang="ru")
       .intro-wrapper
         if (hasHeader)
           +header(headerMods, currentUrl)
-        +intro()
+        if (intro)
+          +intro()
 
       block main
 

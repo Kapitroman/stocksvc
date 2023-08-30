@@ -11,6 +11,7 @@
 @import "variables";
 @import "mixins";
 @import "functions";
+@import "shadows";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
@@ -24,14 +25,17 @@
 @import "blocks/footer";
 @import "blocks/modal";
 @import "blocks/btn";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
-@import "blocks/input-upload";
+@import "blocks/custom-input";//
+@import "blocks/custom-toggle";//
+@import "blocks/custom-select";//
+@import "blocks/input-upload";//
 
+@import "blocks/intro-wrapper";
 @import "blocks/socials";
 @import "blocks/switch-color-theme";
 @import "blocks/logo";
+@import "blocks/intro";
+@import "blocks/intro-card";
 
 // ---------------------------------
 
