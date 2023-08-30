@@ -1,3 +1,40 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .logo
+        +picture("content", "stocks-logo", "png", "226", "36", "logo-stock-sfc")
+      .footer__content
+        ul.footer__menu
+          li.footer__menu-item
+            a.footer__menu-link(href="") Whitepaper
+          li.footer__menu-item
+            a.footer__menu-link(href="") Partners
+          li.footer__menu-item
+            a.footer__menu-link(href="") Privacy Policy
+          li.footer__menu-item
+            a.footer__menu-link(href="") Terms & Conditions
+        ul.socials
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden twitter
+              +icon("twitter", 24, 24)
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden discord
+              +icon("discord", 24, 24)
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden facebook
+              +icon("facebook", 24, 24)
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden instagram
+              +icon("instagram", 24, 24)
+          li.socials__item
+            a.socials__link(href="")
+              span.visually-hidden telegram
+              +icon("telegram", 24, 24)
+        .footer__copyright
+          p.footer__copyright-text made by
+            a.footer__copyright-text-light(href="") roobinium.io
+          p.footer__copyright-text © 2022 StocksFC
