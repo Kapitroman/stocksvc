@@ -16,11 +16,6 @@ mixin intro()
       .intro__hero-image
         .intro__shadow-small
         .intro__shadow-big
-        //-.intro__container-cards
-          +intro-card(["content/faces", "face-07", "png"], "Martinelli", "$3.46").intro-card--first
-          +intro-card(["content/faces", "face-08", "png"], "Ederson", "$3.12").intro-card--second
-          +intro-card(["content/faces", "face-06", "png"], "Maddison", "$2.39").intro-card--third
-          +intro-card(["content/faces", "face-09", "png"], "James", "$2.29").intro-card--fourth
         +picture("content", "iphone", "png", 335, 718, "iphone app").intro__image-iphone
         .intro__image-content
           svg(width="316" height="684" viewBox="0 0 316 684" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
@@ -35,7 +30,7 @@ mixin intro()
               path(d="M-0.00012207 421.718H2.83124L5.39178 438L6.48589 430.914L8.30093 429.859L9.45384 418.09L11.7608 412.369H13.4019L15.0559 405.807L16.5506 408.585L18.4848 401.576L21.0664 397.231L22.455 402.748V405.807L25.4109 398.291L26.5507 402.748L28.6913 401.576V408.585L32.326 405.807L33.6178 396.199L35.5883 398.291L37.777 396.199L39.3959 405.807L40.9944 403.84L42.7683 407.118L43.9196 402.748L45.6182 412.369L47.7736 411.084L51.7205 386.232L53.1217 405.807L54.9314 403.84V410.056L58.01 403.84L60.8214 401.576V394.123L63.3615 398.291L65.0916 390.898H67.9148L70.8723 388.2L72.5902 389.688V394.123L76.6161 389.688L77.9128 396.199L79.4065 403.84H82.0366L84.5248 401.576L86.4212 403.84L89.3143 400.174L90.6696 412.116L93.4004 410.056L94.7582 416.173H96.8471V421.718L98.8825 427.309L100.33 429.859L103.219 421.718H105.864V413.576L109 416.173L112.925 315.127L115.005 326.99L118.252 328.988L120.519 341.818L122.31 325.324L123.885 347.204L125.544 348.581L127.444 350.375L131.654 339.451L140.238 269L141.363 284.818L143.009 290.046L145.041 272.748L146.827 269L148.09 277.685L150.642 284.818L152.265 301.401L155.095 322.158L158 315.127L159.625 308.132L162.626 315.127H164.761V318.161L165.934 322.158L168.164 325.324H169.743L171.328 328.988L174.216 324.476L175.112 327.788L176.918 326.036L177.563 330.299L179.393 330.843L181.475 336.756L182.058 345.205L183.638 340.1L184.758 345.205L187.275 328.988L188.172 333.34H189.772L190.552 341.818L192.522 342.598V345.205L195.843 336.756L198.031 339.451L199.212 335.949L200.784 317.451L202.122 323.229L203.686 317.451L204.637 327.788L205.954 325.324L207.187 331.365L208.749 325.324L210.607 336.756L213.168 340.614L215.159 347.204V351.883L217.052 359.647L218.71 362.118L220.26 353.5L222.038 352.38H224.957L225.645 356.784L228.882 363.074L230.556 367.515L231.551 364.857L233.164 366.353V359.647L235.072 355.588L236.412 360.345H237.617L238.262 352.38L239.581 347.933L241.269 347.204L243.664 338.753L245.182 340.614L246.023 342.598L246.666 332.059L248.491 328.988H249.759L250.566 334.089L252.211 330.843V326.99L254.058 327.788L255.083 326.036L256.374 330.299L257.063 340.614L258.389 347.204L260.766 340.614L261.639 363.074L262.847 367.515L264.186 366.353L265.831 378.383H267.029L268.134 368.026L269.855 364.857L271.725 356.784L273.393 358.684L274.773 360.345L276.229 353.002L278.284 351.883H279.777L280.378 350.375L282.566 352.38L285.246 372.734L287.106 370.982L288.013 369.171L289.025 366.353L289.664 376.466L291.387 379.135L292.477 374.994L293.538 366.353L294.342 372.146L297.418 369.171L299.56 388.2V394.123L302.221 398.291V401.576L304.117 403.317L306.154 397.231L307.304 403.84L307.979 395.681L309.665 394.617L310.444 398.291L311.539 401.576L313.424 397.231L314.754 400.174L315.377 407.118L316 392.602" stroke="#16B862" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
               path(d="M315.566 0.569061H0.0065918V683.561H315.566V0.569061Z" fill="url(#paint1_linear_131_51)")
             defs
-              pattern(id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1")
+              //-pattern(id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1")
                 use(xlink:href="#image0_131_51" transform="scale(0.000315657 0.000473485)")
               filter(id="filter0_b_131_51" x="-108.731" y="160.269" width="533.463" height="460.463" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB")
                 feFlood(flood-opacity="0" result="BackgroundImageFix")
@@ -64,12 +59,6 @@ mixin intro()
             li.intro__image-tabs-item 1m
             li.intro__image-tabs-item 6m
           .btn.btn--green.intro__image-button Buy
-        //-.intro__container-cards
-          +intro-card(["content/faces", "face-06", "png"], "Maddison", "$2.39").intro-card--third
-          +intro-card(["content/faces", "face-09", "png"], "James", "$2.29").intro-card--fourth
-        //-.intro__container-cards
-          +intro-card(["content/faces", "face-07", "png"], "Martinelli", "$3.46").intro-card--first
-          +intro-card(["content/faces", "face-08", "png"], "Ederson", "$3.12").intro-card--second
         .intro__container-cards
           +intro-card(["content/faces", "face-07", "png"], "Martinelli", "$3.46").intro-card--first
           +intro-card(["content/faces", "face-08", "png"], "Ederson", "$3.12").intro-card--second
