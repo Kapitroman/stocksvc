@@ -617,6 +617,7 @@ button,
 
 .footer {
   padding: 4.875rem 0;
+  background-color: #17181A;
 }
 @media (max-width: 767px) {
   .footer {
@@ -744,6 +745,14 @@ button,
 .footer__copyright-text-light {
   margin-left: 0.25rem;
   color: #ffffff;
+}
+@media (hover: hover) {
+  .footer__copyright-text-light:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+}
+.footer__copyright-text-light.focus-visible:focus {
+  opacity: 0.6;
 }
 
 .modal {
@@ -2105,6 +2114,7 @@ h3.title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  pointer-events: none;
 }
 @media (max-width: 767px) {
   .intro__image-button {
@@ -2428,6 +2438,114 @@ h3.title {
   top: 20.25rem;
   width: 12.5rem;
   height: 12.5rem;
+}
+
+.cash-rewards {
+  padding: 7.5rem 0;
+}
+@media (max-width: 767px) {
+  .cash-rewards {
+    display: none;
+  }
+}
+.cash-rewards h2.title {
+  width: 28.6875rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.cash-rewards__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.cash-rewards-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 54.5rem;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(245, 247, 250, 0.06);
+  background: linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0.0001) 100%);
+  -webkit-box-shadow: 0px 1px 0.125rem rgba(9, 13, 20, 0.24), -0.125rem -0.125rem 0.25rem rgba(224, 224, 255, 0.02), 0px 0.25rem 0.25rem rgba(9, 13, 20, 0.12);
+          box-shadow: 0px 1px 0.125rem rgba(9, 13, 20, 0.24), -0.125rem -0.125rem 0.25rem rgba(224, 224, 255, 0.02), 0px 0.25rem 0.25rem rgba(9, 13, 20, 0.12);
+  -webkit-backdrop-filter: blur(3.39785rem);
+          backdrop-filter: blur(3.39785rem);
+}
+.cash-rewards-card__container-image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 13.5rem;
+  height: 13.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(245, 247, 250, 0.12);
+}
+.cash-rewards-card__container-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cash-rewards-card__container-text {
+  margin-left: 2.5rem;
+}
+.cash-rewards-card__title {
+  margin: 0;
+  margin-bottom: 0.75rem;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: -0.400000006px;
+}
+.cash-rewards-card__text {
+  margin: 0;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.cash-rewards-card:nth-child(even) {
+  position: relative;
+  left: 7rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cash-rewards-card:nth-child(even) .cash-rewards-card__container-text {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-left: 2rem;
+}
+
+.cash-rewards-card:nth-child(1) .cash-rewards-card__text {
+  width: 30.75rem;
+}
+
+.cash-rewards-card:nth-child(2) .cash-rewards-card__text {
+  width: 29.75rem;
+}
+
+.cash-rewards-card:nth-child(3) .cash-rewards-card__text {
+  width: 25.4375rem;
+}
+
+.cash-rewards-card:nth-child(4) .cash-rewards-card__text {
+  width: 29.75rem;
 }
 
 /* @mixin hover-focus {

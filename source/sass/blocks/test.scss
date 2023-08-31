@@ -1,0 +1,139 @@
+.test {
+  .container {
+    display: flex;
+  }
+
+  .item {
+    display: grid;
+
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    border: 1px solid rgba(245, 247, 250, 0.12);
+  }
+
+  .sub-1 {
+    grid-area: 1/-1;
+    background: url("../img/content/test/test-01.png");
+    mix-blend-mode: color-dodge;
+  }
+
+  .sub-2 {
+    grid-area: 1/-1;
+    background: url("../img/content/test/test-02.png");
+    mix-blend-mode: color-dodge;
+  }
+
+  .sub-3 {
+    grid-area: 1/-1;
+    background: url("../img/content/test/test-03.png");
+  }
+
+  .sub-4 {
+    grid-area: 1/-1;
+    background: url("../img/content/test/test-04.png");
+  }
+
+  .sub-5 {
+    grid-area: 1/-1;
+    //background: url("../img/content/test/test-05.png");
+    background: #E2FC7C;
+  }
+
+  .item-2 {
+    display: grid;
+
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    border: 1px solid rgba(245, 247, 250, 0.12);
+  }
+
+  .sub-51 {
+    grid-area: 1/-1;
+  }
+
+  .sub-41 {
+    grid-area: 1/-1;
+  }
+
+  .sub-31 {
+    grid-area: 1/-1;
+  }
+
+  .sub-21 {
+    grid-area: 1/-1;
+    mix-blend-mode: color-dodge;
+  }
+
+  .sub-11 {
+    grid-area: 1/-1;
+    mix-blend-mode: color-dodge;
+  }
+
+  .item-3 {
+    display: grid;
+
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    border: 1px solid rgba(245, 247, 250, 0.12);
+  }
+
+  .sub-52 {
+    grid-area: 1/-1;
+    background: #E2FC7C;
+  }
+
+
+
+  .item-4 {
+    display: grid;
+
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    border: 1px solid rgba(245, 247, 250, 0.12);
+  }
+
+  .sub-54 {
+    grid-area: 1/-1;
+    background: #E2FC7C;
+  }
+
+  .sub-44 {
+    grid-area: 1/-1;
+  }
+
+  .sub-34 {
+    grid-area: 1/-1;
+  }
+
+  .sub-24 {
+    grid-area: 1/-1;
+    mix-blend-mode: color-dodge;
+    background: url("../img/content/test/test-02.png");
+
+    @include retina {
+      background-image: url("../img/content/test/test-02@2x.png");
+    }
+  }
+
+  .sub-14 {
+    grid-area: 1/-1;
+    mix-blend-mode: color-dodge;
+    background: url("../img/content/test/test-01.png");
+
+    @include retina {
+      background-image: url("../img/content/test/test-01@2x.png");
+    }
+  }
+}

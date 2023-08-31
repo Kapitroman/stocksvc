@@ -226,6 +226,8 @@
 
     justify-content: center;
 
+    pointer-events: none;
+
     @include vp-767 {
       width: 145px;
       margin-bottom: 9px;

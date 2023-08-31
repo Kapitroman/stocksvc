@@ -1,0 +1,7 @@
+mixin cash-rewards-card(image, title, text)
+  .cash-rewards-card&attributes(attributes)
+    .cash-rewards-card__container-image
+      +picture(image[0], image[1], image[2], 216, 216, "abstract picture", true)
+    .cash-rewards-card__container-text
+      h3.cash-rewards-card__title= title
+      p.cash-rewards-card__text= text

@@ -1,0 +1,25 @@
+mixin cash-rewards()
+  section.cash-rewards
+    .container
+      h2.title.title--center CASH REWARDS
+      .cash-rewards__wrapper
+        +cash-rewards-card(
+          ["content/cash-rewards", "cash-rewards-01", "png"],
+          "Team Of The Week",
+          "The use of blockchain technology allows us to be transparent in everything we do. All transactions at StocksFC are logged on our blockchain and can't be tampered with. This gives our users a new level of trust that isn't available on traditional stock markets"
+        )
+        +cash-rewards-card(
+          ["content/cash-rewards", "cash-rewards-02", "png"],
+          "Team Of The Month",
+          "Everything on the StocksFC platform has been built with sustainability at the core. Our reward system is designed to withstand long periods of low user activity and doesn't solely rely on new users to fund player rewards"
+        )
+        +cash-rewards-card(
+          ["content/cash-rewards", "cash-rewards-03", "png"],
+          "Team of the Season",
+          "StocksFC takes a community-first approach. We take user polls before making decisions on big platform changes and are very open to new ideas and suggestions to improve the platform"
+        )
+        +cash-rewards-card(
+          ["content/cash-rewards", "cash-rewards-04", "png"],
+          "Inplay Rewards",
+          "Everything on the StocksFC platform has been built with sustainability at the core. Our reward system is designed to withstand long periods of low user activity and doesn't solely rely on new users to fund player rewards"
+        )

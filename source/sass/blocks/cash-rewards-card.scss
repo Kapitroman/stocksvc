@@ -1,0 +1,90 @@
+.cash-rewards-card {
+  display: flex;
+  align-items: center;
+
+  width: size(872px);
+  padding: size(8px);
+  border-radius: size(24px);
+  border: 1px solid rgba($color-alice-blue, 0.06);
+
+  background: $black-to-light;
+  box-shadow: $bs-light-1, $bs-light-2, $bs-light-3;
+  backdrop-filter: blur(size(54.3656px));
+
+  &__container-image {
+    flex-shrink: 0;
+
+    width: size(216px);
+    height: size(216px);
+    border-radius: size(16px);
+    border: 1px solid rgba($color-alice-blue, 0.12);
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__container-text {
+    margin-left: size(40px);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: size(12px);
+
+    font-family: $ff-manrope;
+    font-size: size(24px);
+    font-weight: 700;
+    line-height: size(28px);
+    letter-spacing: -0.4000000059604645px;
+  }
+
+  &__text {
+    margin: 0;
+
+    font-family: $ff-manrope;
+    font-size: size(16px);
+    font-weight: 500;
+    line-height: size(28px);
+  }
+}
+
+.cash-rewards-card:nth-child(even) {
+  position: relative;
+  left: size(112px);
+
+  justify-content: space-between;
+
+  .cash-rewards-card__container-text {
+    order: -1;
+
+    margin-left: size(32px);
+  }
+}
+
+.cash-rewards-card:nth-child(1) {
+  .cash-rewards-card__text {
+    width: size(492px);
+  }
+}
+
+.cash-rewards-card:nth-child(2) {
+  .cash-rewards-card__text {
+    width: size(476px);
+  }
+}
+
+.cash-rewards-card:nth-child(3) {
+  .cash-rewards-card__text {
+    width: size(407px);
+  }
+}
+
+.cash-rewards-card:nth-child(4) {
+  .cash-rewards-card__text {
+    width: size(476px);
+  }
+}
