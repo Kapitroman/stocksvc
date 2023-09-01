@@ -1,0 +1,283 @@
+.feature-1 {
+  @include vp-767 {
+    padding-top: 48px;
+
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+
+  h2.title {
+    width: size(536px);
+    margin: 0;
+    margin-right: size(136px);
+
+    @include vp-767 {
+      width: 296px;
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__container-image {
+    position: relative;
+
+    width: size(648px);
+    height: auto;
+    aspect-ratio: 648 / 480;
+
+    @include vp-767 {
+      width: size(360px);
+      aspect-ratio: 360 / 235;
+    }
+  }
+
+  &__block {
+    position: absolute;
+    left: 1px;
+    top: size(85px);
+
+    width: size(460px);
+    height: size(250px);
+    border: 1px solid rgba($color-alice-blue, 0.12);
+    border-radius: size(24px);
+
+    @include vp-767 {
+      left: 67.56px;
+      top: 5px;
+
+      width: 259px;
+      height: 141px;
+    }
+  }
+
+  &__box-shadow-1 {
+    position: absolute;
+    left: 9.57%;
+    right: 47.22%;
+    top: 24.79%;
+    bottom: 10%;
+
+    background: $color-black-russian-4;
+    filter: blur(size(29.5px));
+    border-radius: size(16px);
+
+    @include vp-767 {
+      left: 102.56px;
+      top: 25px;
+
+      width: 157px;
+      height: 175px;
+    }
+  }
+
+  &__box-shadow-2 {
+    position: absolute;
+    left: size(376.71px);
+    top: size(-23px);
+
+    width: size(213.5px);
+    height: size(475.01px);
+
+    background: $black-to-transparent;
+    opacity: 0.5;
+    filter: blur(size(23.5px));
+    transform: rotate(37.13deg);
+
+    @include vp-767 {
+      left: 279.17px;
+      top: -55px;
+
+      width: 119.88px;
+      height: 266.71px;
+    }
+  }
+
+  &__circle-1 {
+    position: absolute;
+    left: size(261px);
+    top: size(146px);
+
+    width: size(131px);
+    height: size(130px);
+    border-radius: 50%;
+
+    background: $apple-to-cyan;
+    box-shadow: $bs-dark-green-1, $bs-dark-green-2, $bs-dark-green-3, $bs-dark-green-4;
+
+    @include vp-767 {
+      left: 213.56px;
+      top: 40px;
+
+      width: 74px;
+      height: 73px;
+    }
+  }
+
+  &__circle-2 {
+    position: absolute;
+    left: size(-40px);
+    top: size(258px);
+
+    width: size(125px);
+    height: size(124px);
+    border-radius: 50%;
+
+    background: $apple-to-cyan;
+    box-shadow: $bs-dark-green-1, $bs-dark-green-2, $bs-dark-green-3, $bs-dark-green-4;
+
+    @include vp-767 {
+      left: 44.56px;
+      top: 102px;
+
+      width: 71px;
+      height: 70px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: size(117px);
+    left: size(33px);
+
+    width: size(280px);
+    height: size(295px);
+    border-radius: size(16px);
+
+    @include vp-767 {
+      left: 86.56px;
+      top: 23px;
+
+      width: 156px;
+      height: 166px;
+      border-radius: 8px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__label {
+    position: absolute;
+
+    padding: size(24px);
+    border-radius: size(20px);
+    border: 1px solid rgba($color-alice-blue, 0.06);
+
+    background: $black-to-light;
+    box-shadow: $bs-light-1, $bs-light-2, $bs-light-3;
+    backdrop-filter: blur(size(54.3656px));
+
+    @include vp-767 {
+      padding: 13px;
+      border-radius: 10px;
+    }
+
+    p + p {
+      margin-top: size(8px);
+    }
+  }
+
+  &__label--cash-balance {
+    left: size(-92px);
+    top: size(187px);
+
+    width: size(177px);
+    height: size(116px);
+
+    @include vp-767 {
+      left: 16px;
+      top: 62.91px;
+      width: 99.38px;
+      height: 65.13px;
+    }
+  }
+
+  &__label--total-rewards-earned {
+    left: size(225px);
+    top: size(134px);
+
+    width: size(204px);
+    height: size(92px);
+
+    @include vp-767 {
+      left: 193.99px;
+      top: 33.15px;
+
+      width: 114.54px;
+      height: 51.66px;
+    }
+  }
+
+  &__label--portfolio-value {
+    left: size(377px);
+    top: size(190px);
+
+    width: size(204px);
+    height: size(92px);
+
+    @include vp-767 {
+      left: 279.33px;
+      top: 64.59px;
+
+      width: 114.54px;
+      height: 51.66px;
+    }
+  }
+
+  &__label-title {
+    margin: 0;
+
+    font-family: $ff-manrope;
+    font-size: size(13px);
+    font-weight: 500;
+    line-height: size(16px);
+
+    @include vp-767 {
+      font-size: 6px;
+      line-height: 6px;
+    }
+  }
+
+  &__label-price {
+    margin: 0;
+
+    font-family: $ff-space;
+    font-size: size(24px);
+    font-weight: 700;
+    line-height: size(24px);
+    letter-spacing: size(-2px);
+
+    @include vp-767 {
+      font-size: 11px;
+      line-height: 11px;
+      letter-spacing: -1px;
+    }
+  }
+
+  &__label-factor {
+    margin: 0;
+
+    font-family: $ff-manrope;
+    font-size: size(13px);
+    font-weight: 500;
+    line-height: size(16px);
+    color: rgba($color-default-white, 0.6);
+
+    @include vp-767 {
+      font-size: 6px;
+      line-height: 6px;
+    }
+  }
+}
