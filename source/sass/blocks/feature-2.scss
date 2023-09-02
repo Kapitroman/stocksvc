@@ -21,7 +21,7 @@
     margin-left: size(24px);
 
     @include vp-767 {
-      width: auto;
+      width: 296px;
       margin-left: 0;
       margin-bottom: 32px;
     }
@@ -35,7 +35,7 @@
     aspect-ratio: 648 / 480;
 
     @include vp-767 {
-      width: size(360px);
+      width: 360px;
       aspect-ratio: 360 / 255;
     }
   }

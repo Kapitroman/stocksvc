@@ -1,7 +1,5 @@
-.feature-1 {
+.feature-3 {
   @include vp-767 {
-    padding-top: 48px;
-
     overflow-x: hidden;
   }
 
@@ -15,9 +13,9 @@
   }
 
   h2.title {
-    width: size(536px);
+    width: size(459px);
     margin: 0;
-    margin-right: size(136px);
+    margin-right: size(213px);
 
     @include vp-767 {
       width: 296px;
@@ -31,133 +29,90 @@
 
     width: size(648px);
     height: auto;
-    aspect-ratio: 648 / 480;
+    aspect-ratio: 648 / 576;
 
     @include vp-767 {
       width: 360px;
-      aspect-ratio: 360 / 235;
+      aspect-ratio: 360 / 282;
     }
   }
 
   &__block {
     position: absolute;
-    left: 1px;
-    top: size(85px);
+    left: size(147px);
+    top: size(110px);
 
-    width: size(460px);
-    height: size(250px);
+    width: size(338px);
+    height: size(367px);
     border: 1px solid rgba($color-alice-blue, 0.12);
     border-radius: size(24px);
 
     @include vp-767 {
-      left: 67.56px;
-      top: 5px;
+      left: 117px;
+      top: 44px;
 
-      width: 259px;
-      height: 141px;
-    }
-  }
-
-  &__box-shadow-1 {
-    position: absolute;
-    left: 9.57%;
-    right: 47.22%;
-    top: 24.79%;
-    bottom: 10%;
-
-    background: $color-black-russian-4;
-    filter: blur(size(29.5px));
-    border-radius: size(16px);
-
-    @include vp-767 {
-      left: 102.56px;
-      top: 25px;
-
-      width: 157px;
-      height: 175px;
-    }
-  }
-
-  &__box-shadow-2 {
-    position: absolute;
-    left: size(376.71px);
-    top: size(-23px);
-
-    width: size(213.5px);
-    height: size(475.01px);
-
-    background: $black-to-transparent;
-    opacity: 0.5;
-    filter: blur(size(23.5px));
-    transform: rotate(37.13deg);
-
-    @include vp-767 {
-      left: 279.17px;
-      top: -55px;
-
-      width: 119.88px;
-      height: 266.71px;
+      width: 184px;
+      height: 199px;
+      border-radius: 12px;
     }
   }
 
   &__circle-1 {
     position: absolute;
-    left: size(261px);
-    top: size(146px);
+    left: size(-57px);
+    top: size(316px);
 
-    width: size(131px);
-    height: size(130px);
+    width: size(133px);
+    height: size(133px);
     border-radius: 50%;
 
     background: $apple-to-cyan;
     box-shadow: $bs-dark-green-1, $bs-dark-green-2, $bs-dark-green-3, $bs-dark-green-4;
 
     @include vp-767 {
-      left: 213.56px;
-      top: 40px;
+      left: 7px;
+      top: 155px;
 
-      width: 74px;
+      width: 73px;
       height: 73px;
     }
   }
 
   &__circle-2 {
     position: absolute;
-    left: size(-40px);
-    top: size(258px);
+    left: size(198px);
+    top: size(28px);
 
-    width: size(125px);
-    height: size(124px);
+    width: size(202px);
+    height: size(202px);
     border-radius: 50%;
 
     background: $apple-to-cyan;
     box-shadow: $bs-dark-green-1, $bs-dark-green-2, $bs-dark-green-3, $bs-dark-green-4;
 
     @include vp-767 {
-      left: 44.56px;
-      top: 102px;
+      left: 145px;
+      top: -1px;
 
-      width: 71px;
-      height: 70px;
+      width: 110px;
+      height: 110px;
     }
   }
 
   &__image {
     position: absolute;
-    top: size(117px);
-    left: size(33px);
+    top: 0;
+    left: size(-119px);
 
-    width: size(280px);
-    height: size(295px);
-    border-radius: size(16px);
+    width: size(765px);
+    aspect-ratio: 773 / 576;
+    height: auto;
 
     @include vp-767 {
-      left: 86.56px;
-      top: 23px;
+      left: -25px;
+      top: -13px;
 
-      width: 156px;
-      height: 166px;
-      border-radius: 8px;
+      width: 405px;
     }
 
     img {
@@ -167,7 +122,7 @@
       object-fit: cover;
     }
   }
-
+  /*
   &__label {
     position: absolute;
 
@@ -280,4 +235,5 @@
       line-height: 6px;
     }
   }
+  */
 }
