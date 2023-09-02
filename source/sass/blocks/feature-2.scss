@@ -1,0 +1,242 @@
+.feature-2 {
+  @include vp-767 {
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include vp-767 {
+      flex-direction: column;
+      justify-content: initial;
+    }
+  }
+
+  h2.title {
+    width: size(492px);
+    margin: 0;
+    margin-left: size(24px);
+
+    @include vp-767 {
+      width: auto;
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__container-image {
+    position: relative;
+
+    width: size(648px);
+    height: auto;
+    aspect-ratio: 648 / 480;
+
+    @include vp-767 {
+      width: size(360px);
+      aspect-ratio: 360 / 255;
+    }
+  }
+
+  &__block {
+    position: absolute;
+    left: 0;
+    top: size(62px);
+
+    width: size(355px);
+    height: size(357px);
+    border: 1px solid rgba($color-alice-blue, 0.12);
+    border-radius: size(24px);
+
+    @include vp-767 {
+      left: 27px;
+      top: 8px;
+
+      width: 184px;
+      height: 185px;
+      border-radius: 12px;
+    }
+  }
+
+  &__circle-1 {
+    position: absolute;
+    left: size(-18px);
+    top: size(80px);
+
+    width: size(125px);
+    height: size(124px);
+    border-radius: 50%;
+
+    background: $apple-to-cyan;
+    box-shadow: $bs-dark-green-1, $bs-dark-green-2, $bs-dark-green-3, $bs-dark-green-4;
+
+    @include vp-767 {
+      left: 18px;
+      top: 17px;
+
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  &__circle-2 {
+    position: absolute;
+    left: size(154px);
+    top: size(271px);
+
+    width: size(164px);
+    height: size(161px);
+    border-radius: 50%;
+
+    background: $apple-to-cyan;
+    box-shadow: $bs-dark-green-1, $bs-dark-green-2, $bs-dark-green-3, $bs-dark-green-4;
+
+    @include vp-767 {
+      left: 107px;
+      top: 116px;
+
+      width: 83px;
+      height: 83px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: size(-89px);
+
+    width: size(773px);
+    aspect-ratio: 773 / 480;
+    height: auto;
+
+    @include vp-767 {
+      left: -10px;
+      top: -20px;
+
+      width: 385px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+  /*
+  &__label {
+    position: absolute;
+
+    padding: size(24px);
+    border-radius: size(20px);
+    border: 1px solid rgba($color-alice-blue, 0.06);
+
+    background: $black-to-light;
+    box-shadow: $bs-light-1, $bs-light-2, $bs-light-3;
+    backdrop-filter: blur(size(54.3656px));
+
+    @include vp-767 {
+      padding: 13px;
+      border-radius: 10px;
+    }
+
+    p + p {
+      margin-top: size(8px);
+    }
+  }
+
+  &__label--cash-balance {
+    left: size(-92px);
+    top: size(187px);
+
+    width: size(177px);
+    height: size(116px);
+
+    @include vp-767 {
+      left: 16px;
+      top: 62.91px;
+      width: 99.38px;
+      height: 65.13px;
+    }
+  }
+
+  &__label--total-rewards-earned {
+    left: size(225px);
+    top: size(134px);
+
+    width: size(204px);
+    height: size(92px);
+
+    @include vp-767 {
+      left: 193.99px;
+      top: 33.15px;
+
+      width: 114.54px;
+      height: 51.66px;
+    }
+  }
+
+  &__label--portfolio-value {
+    left: size(377px);
+    top: size(190px);
+
+    width: size(204px);
+    height: size(92px);
+
+    @include vp-767 {
+      left: 279.33px;
+      top: 64.59px;
+
+      width: 114.54px;
+      height: 51.66px;
+    }
+  }
+
+  &__label-title {
+    margin: 0;
+
+    font-family: $ff-manrope;
+    font-size: size(13px);
+    font-weight: 500;
+    line-height: size(16px);
+
+    @include vp-767 {
+      font-size: 6px;
+      line-height: 6px;
+    }
+  }
+
+  &__label-price {
+    margin: 0;
+
+    font-family: $ff-space;
+    font-size: size(24px);
+    font-weight: 700;
+    line-height: size(24px);
+    letter-spacing: size(-2px);
+
+    @include vp-767 {
+      font-size: 11px;
+      line-height: 11px;
+      letter-spacing: -1px;
+    }
+  }
+
+  &__label-factor {
+    margin: 0;
+
+    font-family: $ff-manrope;
+    font-size: size(13px);
+    font-weight: 500;
+    line-height: size(16px);
+    color: rgba($color-default-white, 0.6);
+
+    @include vp-767 {
+      font-size: 6px;
+      line-height: 6px;
+    }
+  }
+  */
+}
