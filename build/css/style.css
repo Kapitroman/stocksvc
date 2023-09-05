@@ -3295,7 +3295,7 @@ h3.title {
 @media (max-width: 767px) {
   .feature-3__image {
     left: -25px;
-    top: -13px;
+    top: -20px;
     width: 405px;
   }
 }
@@ -3304,6 +3304,177 @@ h3.title {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.stock-market {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .stock-market {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}
+.stock-market__container-image {
+  position: relative;
+  grid-area: 1/-1;
+  width: 100%;
+  aspect-ratio: 1680/624;
+}
+@media (max-width: 767px) {
+  .stock-market__container-image {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    width: 360px;
+    aspect-ratio: 360/361;
+    margin: 0 auto;
+  }
+}
+.stock-market__container-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: initial;
+}
+.stock-market__image-1 {
+  position: absolute;
+  left: -1.875rem;
+  top: 5rem;
+  width: 30.5rem;
+  height: 30.5rem;
+}
+.stock-market__image-1 img {
+  width: 33.625rem;
+  height: 33.625rem;
+}
+@media (max-width: 767px) {
+  .stock-market__image-1 {
+    left: -70px;
+    top: 37px;
+    width: 240px;
+    height: 240px;
+  }
+  .stock-market__image-1 img {
+    width: 265px;
+    height: 265px;
+  }
+}
+.stock-market__image-2 {
+  position: absolute;
+  left: 12.875rem;
+  top: -0.4375rem;
+  width: 33.3125rem;
+  height: 33.3125rem;
+  -webkit-transform: rotate(-3.71deg);
+          transform: rotate(-3.71deg);
+}
+.stock-market__image-2 img {
+  width: 36.5rem;
+  height: 36.5rem;
+}
+@media (max-width: 767px) {
+  .stock-market__image-2 {
+    left: 10px;
+    top: -17px;
+    width: 262px;
+    height: 262px;
+  }
+  .stock-market__image-2 img {
+    width: 288px;
+    height: 288px;
+  }
+}
+.stock-market__image-3 {
+  position: absolute;
+  left: 58.6875rem;
+  top: -1.5rem;
+  width: 31.6875rem;
+  height: 31.6875rem;
+}
+.stock-market__image-3 img {
+  width: 34.8125rem;
+  height: 34.8125rem;
+}
+@media (max-width: 767px) {
+  .stock-market__image-3 {
+    left: 99px;
+    top: 59px;
+    width: 249px;
+    height: 249px;
+  }
+  .stock-market__image-3 img {
+    width: 274px;
+    height: 274px;
+  }
+}
+.stock-market__image-4 {
+  position: absolute;
+  left: 77.5625rem;
+  top: 2.5rem;
+  width: 29.4375rem;
+  height: 29.4375rem;
+}
+.stock-market__image-4 img {
+  width: 32.5625rem;
+  height: 32.5625rem;
+}
+@media (max-width: 767px) {
+  .stock-market__image-4 {
+    left: 245px;
+    top: 105px;
+    width: 232px;
+    height: 232px;
+  }
+  .stock-market__image-4 img {
+    width: 257px;
+    height: 257px;
+  }
+}
+.stock-market__container-text {
+  grid-area: 1/-1;
+  z-index: 1;
+  padding: 7.5rem;
+}
+@media (max-width: 767px) {
+  .stock-market__container-text {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    padding: 48px 0 32px 0;
+  }
+}
+.stock-market h2.title {
+  width: 30.9375rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+@media (max-width: 767px) {
+  .stock-market h2.title {
+    width: 296px;
+    margin-bottom: 24px;
+  }
+}
+.stock-market__text {
+  width: 23.8125rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .stock-market__text {
+    width: 296px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.stock-market__container_button {
+  text-align: center;
 }
 
 /* @mixin hover-focus {

@@ -1,0 +1,18 @@
+mixin stock-market()
+  section.stock-market
+    .stock-market__container-text
+      h2.title.title--center StocksFC is the Football Stock Market
+      p.stock-market__text You can buy, sell and trade football player stocks and earn cash rewards when your players perform on the pitch
+      .stock-market__container_button
+        +btn({
+          text: "Start Trading", href: "#",
+        }).btn--green
+    .stock-market__container-image
+      .stock-market__image-1
+        +picture("content/stock-market-cards", "card-1", "png", 538, 538, "card of man", true)
+      .stock-market__image-2
+        +picture("content/stock-market-cards", "card-2", "png", 584, 584, "card of man", true)
+      .stock-market__image-3
+        +picture("content/stock-market-cards", "card-3", "png", 557, 557, "card of man", true)
+      .stock-market__image-4
+        +picture("content/stock-market-cards", "card-4", "png", 521, 521, "card of man", true)
