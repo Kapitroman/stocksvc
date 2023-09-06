@@ -1,0 +1,99 @@
+.accordion {
+  margin: 0 auto;
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    margin-bottom: size(16px);
+    padding: size(24px);
+    border-radius: size(16px);
+    border: 1px solid rgba($color-alice-blue, 0.06);
+
+    background: $black-to-light;
+    box-shadow: $bs-light-1, $bs-light-2, $bs-light-3;
+    backdrop-filter: blur(size(54.3656px));
+
+    @include vp-767 {
+      margin-bottom: 8px;
+      padding: 18px;
+    }
+  }
+
+  &__element.is-active > &__button {
+    //opacity: 0.5;
+    &::after {
+      content: "-";
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: size(8px);
+    border: none;
+
+    font-family: $ff-manrope;
+    font-weight: 700;
+    font-size: size(24px);
+    line-height: size(24px);
+    letter-spacing: -0.4px;
+    color: $color-default-white;
+
+    background-color: $color-transparent;
+
+    cursor: pointer;
+
+    &::after {
+      content: "+";
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: size(24px);
+      height: size(24px);
+      margin-left: size(34px);
+
+      font-size: size(18px);
+      line-height: size(18px);
+    }
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+
+    @include vp-767 {
+      padding: 6px;
+
+      font-size: 20px;
+
+      &::after {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  &__wrapper {
+    padding: size(8px);
+
+    p {
+      margin: 0;
+
+      font-family: $ff-manrope;
+      font-weight: 500;
+      font-size: size(16px);
+      line-height: size(28px);
+
+      mix-blend-mode: normal;
+    }
+  }
+}
