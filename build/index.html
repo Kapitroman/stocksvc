@@ -60,7 +60,7 @@
               <h1 class="intro__title title">the Football Stock Market</h1>
               <p class="intro__slogan">Buy, Sell, Earn.</p>
               <div class="intro__buttons">
-                <a class="btn btn--green" href="#"><span>Start Trading</span>
+                <a class="btn btn--green" href="#" data-open-modal="start-trading"><span>Start Trading</span>
                 </a>
                 <button class="btn btn--icon" type="button">
                   <svg width="24" height="24" aria-hidden="true">
@@ -403,7 +403,7 @@
             <h2 class="title title--center">StocksFC is the Football Stock Market</h2>
             <p class="stock-market__text">You can buy, sell and trade football player stocks and earn cash rewards when your players perform on the pitch</p>
             <div class="stock-market__container_button">
-              <a class="btn btn--green" href="#"><span>Start Trading</span>
+              <a class="btn btn--green" href="#" data-open-modal="start-trading"><span>Start Trading</span>
               </a>
             </div>
           </div>
@@ -474,6 +474,38 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div class="modal modal--preload modal--start-trading modal--no-scale" data-modal="start-trading">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div class="modal-start-trading">
+            <h2 class="modal-start-trading__title">Start Trading</h2>
+            <div class="modal-start-trading__continue-with"><a class="continue-with-item" href="#">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#google"></use>
+                </svg>
+                <p class="continue-with-item__text">Continue with Google</p></a><a class="continue-with-item" href="#">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#apple"></use>
+                </svg>
+                <p class="continue-with-item__text">Continue with Apple</p></a><a class="continue-with-item" href="#">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#microsoft"></use>
+                </svg>
+                <p class="continue-with-item__text">Continue with Microsoft</p></a>
+            </div>
+            <div class="modal-start-trading__create-account">
+              <p class="modal-start-trading__create-account-text">Don't have account yet?</p><a class="modal-start-trading__create-account-link" href="#">Create Account</a>
+            </div>
+          </div>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

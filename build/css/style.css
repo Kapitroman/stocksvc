@@ -771,7 +771,7 @@ button,
           flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(23, 24, 26, 0.8);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   visibility: hidden;
@@ -802,12 +802,6 @@ button,
           align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 60px 40px;
-}
-@media (max-width: 767px) {
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
 }
 .modal__overlay {
   position: absolute;
@@ -819,37 +813,45 @@ button,
 }
 .modal__content {
   position: relative;
-  width: 600px;
-  padding: 40px;
-  background-color: #ffffff;
-}
-@media (max-width: 767px) {
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
 }
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 2.625rem;
+  right: 2.5rem;
   z-index: 1;
-  width: 40px;
-  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
   padding: 0;
-  background: rgba(255, 255, 255, 0);
   border: none;
+  color: #E0E0FF;
+  opacity: 0.4;
+  background: rgba(255, 255, 255, 0);
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
+@media (max-width: 767px) {
+  .modal__close-btn {
+    top: 32px;
+    right: 32px;
+  }
+}
 @media (hover: hover) {
   .modal__close-btn:hover:not(.focus-visible) {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 .modal__close-btn.focus-visible:focus {
-  opacity: 0.5;
+  opacity: 1;
 }
 .modal--responsive .modal__content {
   width: 100%;
@@ -3572,6 +3574,9 @@ h3.title {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 64px;
   }
 }
@@ -3630,6 +3635,131 @@ h3.title {
 .get-started .get-started-card:nth-child(2) .get-started-card__text {
     width: 100%;
   }
+}
+
+.modal-start-trading {
+  width: 24.4375rem;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(245, 247, 250, 0.06);
+  background: linear-gradient(135deg, rgba(245, 247, 250, 0.06) 0%, rgba(245, 247, 250, 0.0001) 100%);
+  -webkit-box-shadow: 0px 1px 0.125rem rgba(9, 13, 20, 0.24), -0.125rem -0.125rem 0.25rem rgba(224, 224, 255, 0.02), 0px 0.25rem 0.25rem rgba(9, 13, 20, 0.12);
+          box-shadow: 0px 1px 0.125rem rgba(9, 13, 20, 0.24), -0.125rem -0.125rem 0.25rem rgba(224, 224, 255, 0.02), 0px 0.25rem 0.25rem rgba(9, 13, 20, 0.12);
+  -webkit-backdrop-filter: blur(3.39785rem);
+          backdrop-filter: blur(3.39785rem);
+}
+@media (max-width: 767px) {
+  .modal-start-trading {
+    width: 360px;
+    padding: 32px;
+    border-radius: 40px;
+  }
+}
+.modal-start-trading__title {
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  font-family: "Druk Cyr", "Arial", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .modal-start-trading__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.modal-start-trading__continue-with {
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
+.modal-start-trading__continue-with .continue-with-item + .continue-with-item {
+  margin-top: 0.75rem;
+}
+@media (max-width: 767px) {
+  .modal-start-trading__continue-with {
+    margin-bottom: 32px;
+  }
+}
+.modal-start-trading__create-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal-start-trading__create-account-text {
+  margin: 0;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.modal-start-trading__create-account-link {
+  display: inline-block;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #76BB39;
+}
+@media (hover: hover) {
+  .modal-start-trading__create-account-link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.modal-start-trading__create-account-link.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.continue-with-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background-color: rgba(224, 224, 255, 0.04);
+}
+@media (max-width: 767px) {
+  .continue-with-item {
+    padding: 10px;
+  }
+}
+.continue-with-item svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+.continue-with-item p {
+  margin: 0;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+@media (hover: hover) {
+  .continue-with-item:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.continue-with-item.focus-visible:focus {
+  opacity: 0.8;
 }
 
 /* @mixin hover-focus {

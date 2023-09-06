@@ -1,0 +1,10 @@
+mixin modal-start-trading()
+  .modal-start-trading
+    h2.modal-start-trading__title Start Trading
+    .modal-start-trading__continue-with
+      +continue-with-item("google", "Continue with Google")
+      +continue-with-item("apple", "Continue with Apple")
+      +continue-with-item("microsoft", "Continue with Microsoft")
+    .modal-start-trading__create-account
+      p.modal-start-trading__create-account-text Don't have account yet?
+      a.modal-start-trading__create-account-link(href="#") Create Account

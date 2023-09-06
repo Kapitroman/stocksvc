@@ -1,0 +1,33 @@
+.continue-with-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: size(12px);
+  border-radius: size(12px);
+
+  background-color: rgba($color-lavender, 0.04);
+
+  @include vp-767 {
+    padding: 10px;
+  }
+
+  svg {
+    width: size(24px);
+    height: size(24px);
+    margin-right: size(12px);
+  }
+
+  p {
+    margin: 0;
+
+    font-family: $ff-manrope;
+    font-weight: 500;
+    font-size: size(16px);
+    line-height: size(28px);
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

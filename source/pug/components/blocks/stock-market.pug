@@ -6,7 +6,7 @@ mixin stock-market()
       .stock-market__container_button
         +btn({
           text: "Start Trading", href: "#",
-        }).btn--green
+        }).btn--green(data-open-modal="start-trading")
     .stock-market__container-image
       .stock-market__image-1
         +picture("content/stock-market-cards", "card-1", "png", 538, 538, "card of man", true)
