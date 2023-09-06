@@ -1,0 +1,9 @@
+mixin get-started-card(image, title, text)
+  li.get-started-card&attributes(attributes)
+    .get-started-card__container-image
+      +picture(image[0], image[1], image[2], 96, 96, "icon picture", true)
+      .get-started-card__block.get-started-card__block-first
+      .get-started-card__block.get-started-card__block-second
+    .get-started-card__container-text
+      h3.title.get-started-card__title= title
+      p.get-started-card__text= text

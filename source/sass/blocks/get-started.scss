@@ -1,4 +1,4 @@
-.faq {
+.get-started {
   position: relative;
 
   padding: size(120px) 0;
@@ -11,30 +11,41 @@
   }
 
   .container {
-    display: flex;
-
     position: relative;
     z-index: 1;
-
-    @include vp-767 {
-      flex-direction: column;
-    }
   }
 
   h2.title {
-    width: size(385px);
+    width: size(275px);
     margin: 0;
-    margin-right: size(175px);
+    margin-bottom: size(88px);
 
     @include vp-767 {
-      width: 296px;
+      width: 200px;
       margin: 0 auto;
-      margin-bottom: 24px;
+      margin-bottom: 64px;
+
+      text-align: center;
     }
   }
 
-  .accordion {
-    width: size(760px);
+  &__list {
+    display: flex;
+    gap: size(24px);
+
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+
+    @include vp-767 {
+      flex-direction: column;
+      gap: 64px;
+    }
+  }
+
+  .get-started-card {
+    width: size(424px);
 
     @include vp-767 {
       width: 296px;
@@ -43,11 +54,11 @@
 
   &__circle-1 {
     position: absolute;
-    left: size(430px);
-    top: size(199px);
+    left: size(932px);
+    top: size(520px);
 
-    width: size(157px);
-    height: size(157px);
+    width: size(240px);
+    height: size(240px);
     border-radius: 50%;
 
     background: $apple-to-cyan;
@@ -55,7 +66,7 @@
 
     @include vp-767 {
       left: -33px;
-      top: 216px;
+      top: 266px;
 
       width: 130px;
       height: 128px;
@@ -64,11 +75,11 @@
 
   &__circle-2 {
     position: absolute;
-    right: size(820px);
-    top: size(436px);
+    right: size(49px);
+    top: size(143px);
 
-    width: size(276px);
-    height: size(275px);
+    width: size(289px);
+    height: size(289px);
     border-radius: 50%;
 
     background: $apple-to-cyan;
@@ -76,10 +87,21 @@
 
     @include vp-767 {
       right: -41px;
-      top: -50px;
+      top: 566px;
 
       width: 168px;
       height: 165px;
+    }
+  }
+
+  .get-started-card:nth-child(1),
+  .get-started-card:nth-child(2) {
+    .get-started-card__text {
+      width: size(285px);
+
+      @include vp-767 {
+        width: 100%;
+      }
     }
   }
 }

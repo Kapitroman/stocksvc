@@ -1,0 +1,92 @@
+.get-started-card {
+  position: relative;
+
+  padding: size(96px) size(40px) size(36px) size(40px);
+  border-radius: size(24px);
+  border: 1px solid rgba($color-alice-blue, 0.06);
+
+  background: $black-to-light;
+  box-shadow: $bs-light-1, $bs-light-2, $bs-light-3;
+  backdrop-filter: blur(size(54.3656px));
+
+  @include vp-767 {
+    padding: 96px 24px 24px 24px;
+  }
+
+  &__container-image {
+    position: absolute;
+    top: size(-40px);
+    z-index: 3;
+
+    width: size(96px);
+    height: size(96px);
+    border-radius: size(16px);
+    border: 1px solid rgba($color-alice-blue, 0.12);
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+    @include vp-767 {
+      left: 50%;
+      transform: translate(-48px);
+    }
+  }
+
+  &__block {
+    position: absolute;
+
+    width: size(96px);
+    height: size(96px);
+    border-radius: size(20px);
+    border: 1px solid rgba($color-alice-blue, 0.06);
+
+    background: $black-to-light;
+    box-shadow: $bs-light-1, $bs-light-2, $bs-light-3;
+    backdrop-filter: blur(size(54.3656px));
+  }
+
+  &__block-first {
+    top: 6px;
+    left: 6px;
+    z-index: -1;
+  }
+
+  &__block-second {
+    top: 12px;
+    left: 12px;
+    z-index: -2;
+  }
+
+  h3.title {
+    width: size(280px);
+    margin: 0;
+    margin-bottom: size(24px);
+
+    @include vp-767 {
+      width: 200px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    font-family: $ff-manrope;
+    font-size: size(16px);
+    font-weight: 500;
+    line-height: size(28px);
+
+    @include vp-767 {
+      text-align: center;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}

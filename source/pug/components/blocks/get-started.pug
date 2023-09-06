@@ -1,0 +1,22 @@
+mixin get-started()
+  section.get-started
+    .container
+      h2.title Get Started
+      ul.get-started__list
+        +get-started-card(
+          ["content/get-started", "get-started-01", "png"],
+          "Build Your Portfolio",
+          "The portfolio page is where you can see all of the stocks (players) that you hold. You can also view other statistics such as profit, rewards earned and current price. Additionally, you can check your portfolio's total value and see your cash balance"
+        )
+        +get-started-card(
+          ["content/get-started", "get-started-02", "png"],
+          "Win Rewards",
+          "Holding stocks in your portfolio means that they are automatically eligible to win reward payouts. You don't need to submit a team each week. If the players in your portfolio win a reward, you'll automatically receive cash payments"
+        )
+        +get-started-card(
+          ["content/get-started", "get-started-03", "png"],
+          "Ethereum (ETH)",
+          "The Ethereum cryptocurrency is the native currency of StocksFC. All buying, selling, trading and rewards paid on the platform are Ethereum. If you don't own any Ethereum already, don't worry! You can deposit with debit cards or credit cards, and it will automatically be converted to Ethereum"
+        )
+    .get-started__circle-1
+    .get-started__circle-2
